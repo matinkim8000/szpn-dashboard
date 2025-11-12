@@ -2,7 +2,7 @@ import '../styles/globals.css'
 
 export const metadata = {
   title: 'SZPN Dashboard (BSC)',
-  description: 'SZPN balance, recent transfers, and send function on BNB Smart Chain',
+  description: 'SZPN Dashboard unified version supporting TokenPocket & MetaMask',
 }
 
 export default function RootLayout({ children }) {

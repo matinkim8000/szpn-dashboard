@@ -4,6 +4,11 @@ import { bsc } from 'wagmi/chains'
 import { injected } from 'wagmi/connectors'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
+// TokenPocket 확장 인식 코드 추가
+if (typeof window !== 'undefined' && window.tokenpocket) {
+  window.ethereum = window.tokenpocket; // TokenPocket provider 주입
+}
+
 const config = createConfig({
   chains: [bsc],
   transports: {
